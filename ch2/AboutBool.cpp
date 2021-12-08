@@ -8,6 +8,7 @@ bool IsPositive(int num) {
 }
 
 int main() {
+    
     bool isPos;
     int num;
     cout<<"Input Number : ";

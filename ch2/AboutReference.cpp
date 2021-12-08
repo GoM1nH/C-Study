@@ -8,7 +8,6 @@ void SwapPointer(int *(&x),int *(&y)) {
 }
 
 int main() {
-
     int num1 = 10;
     int *ptr1 = &num1;
     int num2 = 20;
