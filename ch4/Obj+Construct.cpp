@@ -6,14 +6,14 @@ class FruitSeller { // 과일을 파는 과일장수의 객체 선언
 
 private : // 멤버 변수이자 객체의 상태정보
 
-    int APPLE_PRICE;
+    const int APPLE_PRICE;
     int NumOfApples;
     int MyMoney;
 
 public : // 멤버 함수이자 객체의 행동(기능)
     
-    FruitSeller(int price, int num, int money) { // Init 함수를 쓰지 않고 객체 선언과 동시에 초기화. 생성자 활용.
-        APPLE_PRICE = price;
+    FruitSeller(int price, int num, int money) :APPLE_PRICE(price){ // Init 함수를 쓰지 않고 객체 선언과 동시에 초기화. 생성자 활용.
+    // Member Initializer는 선언과 동시에 초기화가 이뤄지는 형태로, const 멤버변수도 이니셜라이저 이용 가능
         NumOfApples = num;
         MyMoney = money;
     }
