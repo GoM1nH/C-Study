@@ -3,7 +3,7 @@
 
 using namespace std;
 
-bool Point::InitMembers(int xpos, int ypos) {
+/* bool Point::InitMembers(int xpos, int ypos) {
 
     if(xpos<0 || ypos<0) {
         cout<<"RANGE ERROR"<<endl;
@@ -14,6 +14,11 @@ bool Point::InitMembers(int xpos, int ypos) {
     y = ypos;
     return true;
 
+} */
+
+Point::Point(const int &xpos, const int &ypos) {
+    x = xpos;
+    y = ypos;
 }
 
 int Point::GetX() const {
