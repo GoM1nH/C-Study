@@ -9,10 +9,13 @@ private :
     int xpos, ypos;
 
 public :
-    void Init(int x, int y) {
+    Point(int x, int y) : xpos(x), ypos(y) {
+    }
+    
+    /* void Init(int x, int y) {
         xpos = x;
         ypos = y;
-    }
+    } */
 
     void ShowPointInfo() const {
         cout<<"["<<xpos<<", "<<ypos<<"]"<<endl;
@@ -26,10 +29,12 @@ private :
     Point center;
 
 public :
-    void Init(int x, int y, int r) {
+    Circle(int x, int y, int r) : rad(r), center(x, y){
+    }
+    /* void Init(int x, int y, int r) {
         rad = r;
         center.Init(x, y);
-    }
+    } */
 
     void ShowCircleInfo() const {
         cout<<"Radius : "<<rad<<endl;
@@ -44,11 +49,13 @@ private :
     Circle Outter;
 
 public :
-    void Init(int x1, int y1, int r1, int x2, int y2, int r2) {
+    Ring(int x1, int y1, int r1, int x2, int y2, int r2) : Inner(x1, y1, r1), Outter(x2, y2, r2) {
+    }
+    /* void Init(int x1, int y1, int r1, int x2, int y2, int r2) {
         
         Inner.Init(x1, y1, r1);
         Outter.Init(x2, y2, r2);
-    }
+    } */
 
     void ShowRingInfo() const {
         cout<<"Inner Circle Info..."<<endl;
