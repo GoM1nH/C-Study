@@ -13,6 +13,7 @@ public :
     SoSimple * GetThisPointer() {
         return this; // 객체 자신의 주소값을 반환한다는 의미다. 즉, this는 객체 자신의 주소값을 대신하는 표현.
     }
+    
 };
 
 int main() {

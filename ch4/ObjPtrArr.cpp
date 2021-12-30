@@ -44,6 +44,5 @@ int main() {
     delete parr[0];
     delete parr[1];
     delete parr[2];
-
     return 0;
 }
